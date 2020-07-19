@@ -1,8 +1,9 @@
+body {
+    margin: auto 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
 .zone {
-    padding:30px 50px;
-    margin:40px 60px;
     cursor:pointer;
-    display:inline-block;
     color:#FFF;
     font-size:2em;
     border-radius:4px;
@@ -16,7 +17,64 @@
     -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
     box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
 }
+nav {
+    width: 100%;
+}
 
+.navbar {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    align-items: center;
+    height: 50px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, fit-content(100px));
+    justify-self: start;
+    gap: 10px;
+}
+
+.navbar a {
+    font-size: 1em;
+    color: white;
+    text-decoration: none;
+    justify-self: end;
+    padding: 0;
+    margin-right: 20px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+}
+
+.cover img {
+    width: 30rem;
+}
+
+.grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px,1fr));
+}
+
+
+.box {
+    background-color: darkslategrey;
+    padding: 130px;
+    margin: 20px;
+}
+
+.box > img {
+    width: 100%;
+}
+
+footer {
+    text-align: center;
+}
 /*https://paulund.co.uk/how-to-create-shiny-css-buttons*/
 /***********************************************************************
  *  Green Background
